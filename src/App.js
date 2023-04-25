@@ -1,13 +1,14 @@
 
 import './App.css';
 import Banner from './Banner';
+import Navbar from './Navbar';
 import Row from './Row';
 import requests from './requests';
 
 function App() {
   return (
     <div className="App">
-
+      <Navbar/>
       <Banner/>
 
      <Row isPoster={true} title='Trendting' fetchUrl={requests.fetchTrending}/>

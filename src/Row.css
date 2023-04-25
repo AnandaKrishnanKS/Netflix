@@ -1,6 +1,6 @@
 .movie_row{
     display: flex;
-
+    overflow-x: scroll;
 }
 
 .movie{

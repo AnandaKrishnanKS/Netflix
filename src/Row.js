@@ -1,6 +1,7 @@
 import  { React,useEffect,useState } from 'react'
 import instance from './instance'
 import './Row.css'
+import { Link } from 'react-router-dom';
 
 function Row({title,fetchUrl,isPoster}) {  //destucturing variable to access data
 
@@ -24,18 +25,20 @@ function Row({title,fetchUrl,isPoster}) {  //destucturing variable to access dat
     <>
       <div className='row'>
       <h1>{title}</h1>
-      <div className='movie_row'>
-        {
-    
-            movies.map(movie=>(
-                <img
-                className={`movie ${isPoster && 'posterMovie'}`}
-                src={`${base_url}${isPoster?movie.poster_path:movie.backdrop_path}`}
-    
-                />
-            ))
-    
-        }
+      <div>
+        <div className='movie_row'>
+          {
+      
+              movies.map(movie=>(
+                  <img
+                  className={`movie ${isPoster && 'posterMovie'}`}
+                  src={`${base_url}${isPoster?movie.poster_path:movie.backdrop_path}`}
+                  alt='...'
+                  />
+              ))
+      
+          }
+        </div>
       </div>
       </div>
     </>

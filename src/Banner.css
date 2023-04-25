@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+}
+
+.banner{
+    background-size: cover;
+    height: 500px;
+    margin-top: 0px;
+}
+.bannerContent{
+    margin-left: 50px;
+    padding-top: 300px;
+    height: 200px;
+}
+
+.title{
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+
+.overview{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    width: 75vw;
+}
+
+@media (max-width: 1000px) {
+    .overview{
+        font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .overview{
+        font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 650px) {
+    .overview{
+        font-size: 1rem;
+    }
+    .title{
+        font-size:x-large;
+        padding-bottom: 10px;
+    }
+    .bannerContent{
+        margin-left: 20px;
+        height: 300px;
+    }
+  }
+  @media (max-width: 430px) {
+    
+    
+    .bannerContent{
+        padding-top: 250px;
+    }
+  }
